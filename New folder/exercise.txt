@@ -1,0 +1,188 @@
+time complexity exercise 
+Q 1
+
+
+
+function ReverseArray(arr){
+ 
+ let newArr = []
+  
+ for(let i = arr.length-1; i>=0; i--){
+ 
+       newArr.push(arr[i])
+ 
+  }
+ 
+ return newArr
+
+}
+
+
+let result = ReverseArray([1,2,3,4])   //order n O(n) Linear
+
+let result2 = ReverseArray([4,5,6,7,8]) // order n O(n) Linear
+                                     
+   // space Complexity O(n)
+
+console.log(result)
+
+console.log(result2)
+
+Q 2
+
+ 
+
+let arr = [1,2,3,4]
+
+arr.push(5)
+
+console.log(arr)
+
+// order of a O(1)
+
+// space complexity ni hogi q ki space already liya he usi me push kiya new element
+
+
+Q 3
+
+function MultiplyArr(arr1,arr2){
+
+ let total = 0
+ for(let i of arr1 ){
+ 
+      for(let j of arr2){
+       
+  total += i*j
+      
+ }
+ 
+   }
+ 
+return total
+
+}
+
+let result = MultiplyArr([1,2,3],[4,5,6,7]) 
+  //order of O(n*m)
+
+
+let result2 = MultiplyArr([4,5,6,7,8],[6,7,5,6]) 
+// order of O(n*m)
+
+
+console.log(result)
+
+console.log(result2)
+
+Q 4
+
+function MultiplyArr(arr1){
+ 
+let total = 0
+ 
+for(let i=1; i<arr1.length; i=i*2){
+ 
+    total = i*i
+ 
+ }
+
+ return total
+
+}
+
+let result = MultiplyArr([1,2,3])  
+ //order of (log n)
+
+let result2 = MultiplyArr([4,5,6,7,8]) // order of O(log2n)
+
+
+console.log(result)
+
+console.log(result2)
+
+
+Q 5
+
+  
+function MultiplyArr(arr1){
+
+ let total = 0
+
+ for(let i=1; i<arr1.length; i++){
+     for(let j=1; j<arr1.length; j=j*2){
+  
+   total = j*j
+      
+     }
+  
+  }
+
+}
+// order of n O(N)
+// order of O(log n)
+// O(nlogn)
+
+
+
+Q 6
+
+fibonacci series time complexity O(2^n)
+What is the time complexity and space complexity of the recursive Fibonacci algorithm?
+For recursion, the time complexity would be O(2^n) since every node will split into two subbranches
+
+
+
+const number = 7;
+
+let n1 = 0, n2 = 1, nextTerm;
+
+
+for (let i = 1; i <= number; i++) {
+
+    console.log(n1);
+  
+  nextTerm = n1 + n2;
+  
+  n1 = n2;
+  
+  n2 = nextTerm;
+
+}
+
+
+
+
+
+                   time complexity order of O(n)
+
+
+Q 7
+
+
+
+let arr = [1,2,3,4]  // order O(n)
+
+arr.shift()
+
+arr.unshift(9)
+
+console.log(arr)
+
+
+Q 8 
+
+
+let arr1 = [1,2,3,4]  //O(1) 
+constant
+arr1.pop()
+
+arr1.push(88)
+
+console.log(arr1)
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+frequency counter method = it means we have given an array or string with repeated digits or repeated alphabets we need to 
+find the frequency in that array or string
+
+frequency = this pattern uses objects or sets to collect values/frequencies of vlues 
+this can often avoid the need for nested loops or O(n^2) operations wit arrays/strings
+
+example arr = [1,2,3,45,6,5,6,8,9,76,6,7,6,5,4,6]
+
+example
+
+let arr  =   "12553451"
+
+arr = arr.split("")
+
+for(let i=0; i<arr.length-1; i++)
+{
+  
+ if(arr[i] > arr[i+1])
+{
+     let temp = arr[i];
+   
+  arr[i] = arr[i+1];
+    
+ arr[i+1] = temp
+   
+  i = -1;
+  
+ }
+}
+
+
+function solution(arr)
+ {
+let  j= 0
+
+for(let i = 0; i<arr.length; i++)
+{
+    if(arr[i] != ' ')
+{
+    if(arr[i] == arr[i+1]){
+  
+    j++
+ 
+   }else{
+  
+    j++
+     
+  console.log(arr[i],j)
+  
+     j=0
+   
+   }
+    }
+}
+}
+  
+ solution(arr)
+
