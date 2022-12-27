@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <h1> this is linked list </h1>
+    <script>
+         
+         class List{
+             // jese class banti constructor ban jat ahe 
+             constructor(val){
+                  //defining head
+                  this.head ={
+                    value : val,
+                    next : null
+                  }
+                 this.tail = this.head
+                 this.size = 1
+             }
+
+               // creating new method for tail to enter multiple entries
+                   appendNode(data){
+                        let newNode ={
+                            value : data,
+                            next : null
+                        };
+                        this.tail.next = newNode;
+                        this.tail = newNode;
+                        this.size++
+                   }
+
+         } 
+         let list = new List(200);
+         // calling appendNode
+         list.appendNode(300)
+          list.appendNode(400)
+        //  list.appendNode(500)
+         console.log(list)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <h1> this is linked list program </h1>
+   <script> 
+             class Node{
+                constructor(val){
+                    this.head = {
+                        value : val,
+                        next : null
+                    }
+                     this.tail = this.head
+                }
+
+                // creating new method for tail 
+                AddDataInTail(val){
+                    this.node={
+                        value : val,
+                        next : null
+                    }
+                    this.tail.next = this.node;
+                    this.tail = node;
+                }
+             }
+
+             // calling this linklist 
+             let node  = new Node(100);
+             node.AddDataInTail(200)
+             console.log(node)
+ </script>
+</head>
+<body>
+    
+</body>
+</html>

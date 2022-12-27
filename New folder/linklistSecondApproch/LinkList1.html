@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            
+
+class LinkList{
+    constructor(value){
+       this.value = value
+       this.next  = null
+    }
+}
+let head = null
+let tail = null
+ let arr = [10,20,30,40]
+for(let element of arr){
+    let obj = new LinkList(element)
+    if(!head){
+        head = obj
+        tail = obj 
+    }else{
+        tail.next = obj
+        tail = tail.next
+    }
+}
+
+while(head){
+    console.log(head)
+    head = head.next
+}
+
+
+
+
+
+        </script>
+    </head>
+</html>

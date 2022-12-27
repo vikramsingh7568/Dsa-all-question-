@@ -76,9 +76,7 @@ for(let i =2 ; i<a; i++){
           // create a boolean array prime
           // initilize all entries it as true , 
           // will finally be false if i is not a prime else true
-
         let  prime = Array.from({length: n+1}, (_, i) => true);
-console.log(prime)
           for(p = 2; p*p <= n; p++ ){
                // if prime[p] is not  changed, then it is a 
                // prime
@@ -88,12 +86,11 @@ console.log(prime)
                    for(i = p * p ; i<=n; i+=p)
                         prime[i] = false;
                }
-
           }
             let primes = []
             // print all prime numbers
              for(i = 2; i<=n; i++){
-                primes.push[i]
+              if(prime[i] == false) primes.push[i]
              }
              console.log(primes)
      }

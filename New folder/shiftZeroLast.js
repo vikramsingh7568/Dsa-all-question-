@@ -10,6 +10,7 @@ let n = nums.length-1
               lastNonZeroIndex++;
           }
       }
+        console.log(lastNonZeroIndex)
         for(let i = lastNonZeroIndex; i<=n; i++){
             nums[i] = 0;
         }

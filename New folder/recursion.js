@@ -16,7 +16,7 @@ function fibo(n){
  //return  fibo(n-1) + fibo (n-2)
   // console.log(n)
 }
-let result = fibo(4)
+let result = fibo(8)
 console.log(result)
 
 
@@ -78,11 +78,8 @@ console.log(result)
 
 // is function me power function ka kam recursion se kar rahe he
 
-
 //Recursion is a process of calling itself.
 // A function that calls itself is called a recursive function.
-
-
 
 
 // function pow(b,exp){
